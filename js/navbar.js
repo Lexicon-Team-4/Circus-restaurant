@@ -3,7 +3,6 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks  = document.getElementsByClassName('navbar-links')[0]
 const bar = document.getElementsByClassName('bar')
 
-
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
   bar[0].classList.toggle('activeTop')

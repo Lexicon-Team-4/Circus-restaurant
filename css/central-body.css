@@ -1,5 +1,10 @@
-
 .central-body {
-  margin: 0 20px 0 20px;
+  margin: 0 auto;
+  width: 70%;
 }
-
+html {
+  scroll-behavior: smoth;
+}
+::webkit-scrollbar {
+  display: none;
+}

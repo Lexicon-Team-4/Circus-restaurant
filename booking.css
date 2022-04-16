@@ -1,0 +1,29 @@
+.bookingheading{
+    text-align: center; 
+ }
+ .booking-form{
+     background-color:#adc9cf3a;
+     color: #0C0A3E;
+ }
+ 
+ .h-blue, h4{
+     background-color:  #0C0A3E;
+     color: #EEF4D4;
+ }
+ 
+ .btn-primary{
+     background-color: white;
+     border-color:white;
+     color:#3f51b5;
+     font-weight: bold;
+     width: 200px;
+ 
+ }
+ .btn-primary:hover{
+     background-color: white;
+     border-color:white;
+     color:#3f51b5;
+ }
+ .center{
+     text-align: center;
+ }

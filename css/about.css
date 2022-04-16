@@ -1,0 +1,27 @@
+@import url("css-variables.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  background: rgb(28, 186, 244);
+  overflow-y: visible; /* Hide vertical scrollbar */
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 90px;
+}
+
+/* body {
+  background-image: url('../images/events/swapnil-dwivedi-mK2fnT6frE0-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 20%;
+  margin-top: 50px;
+} */
+
+/* 
+html {
+  height: 100%
+} */

@@ -1,6 +1,6 @@
 .menu__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .menu__item {
@@ -66,29 +66,34 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 140px;
   height: 100%;
-  padding: 20px 0;
+  padding: 25px 0;
   transition: all 0.5s ease;
   margin-top: 10em;
+ float: left;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   color: #818181;
   display: block;
+  margin-bottom:1rem;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
-}
+  background: var(--navbar-color-hover);
 
 @media screen and (max-width: 1024px) {
   .menu__container {
     grid-template-columns: 1fr 1 fr;
     gap: 1.2rem;
+  }
+  .sidenav {
+    visibility: hidden;
   }
 }
 @media screen and (max-width: 600px) {
@@ -98,6 +103,7 @@ section {
   }
   .sidenav {
     padding-top: 15px;
+    .sidenav;
   }
   .sidenav a {
     font-size: 18px;

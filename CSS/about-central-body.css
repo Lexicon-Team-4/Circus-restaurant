@@ -1,0 +1,165 @@
+ *{
+  margin:0px;
+  padding:0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.carousel .carousel-item {
+  height: 600px;
+}
+
+.carousel .carousel-item active {
+  height: 600px;
+}
+
+.section {
+  width: 100%;
+}
+
+.section .container{
+  width: 80%;
+  display: block;
+  margin: 0px;
+  margin: 0px auto;
+  padding: 80px 0px;
+}
+
+.container .title{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container .title h1{
+  font-size: 40px;
+  color:rgba(48, 92, 117, 0.47);
+}
+
+.container .title h1::after{
+  content: "";
+  height: 1.5px;
+  width: 500px;
+  background-color: maroon;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+
+}
+
+.container .content .article p{
+  font-size: 18px;
+}
+
+.content .article #button{
+  margin-top: 50px;
+}
+
+.content .article #button{
+  background-color: rgba(48, 92, 117, 0.47);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+  
+.content .article #button:hover{
+  color:#fff;
+  background-color: rgba(48, 92, 117, 0.8);
+  transition: 1s ease;
+
+}
+
+.timings{
+  margin-top:8%;
+  border-style: solid;
+  border-color:rgba(48, 92, 117, 0.47);
+  border-width: 2px;
+  padding: 20px;
+}
+.timings p{
+  text-align: center;
+  font-size: 22px;
+}
+
+.timings h2{
+  text-align: center;
+  
+}
+
+.timings h2::after{
+  content: "";
+  height: 1px;
+  width: 400px;
+  background-color: maroon;
+  border-radius: 25px;
+  display: block;
+  margin: auto;
+
+}
+
+.container .address{
+  font-size: 20px;
+  background-color: rgba(48, 92, 117, 0.47);
+  color: white;
+  height: 405px;
+  border-style: solid;
+  border-left-width:15px;
+  margin-top: 39px; 
+  padding: 60px;
+
+}
+
+.newsletter p{
+  font-size: 20px;
+}
+
+.newsletter .button{
+  padding: 12px 30px;
+  background-color: rgba(48, 92, 117, 0.47);
+  color: #fff;
+  font-size: 20px;
+  border:none;
+  margin-left: 8px;
+}
+
+.newsletter .button:hover{
+  color:#fff;
+  background-color: rgba(48, 92, 117, 0.8);
+  transition: 1s ease;
+
+}
+
+.container .fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.container .fa:hover {
+  opacity: 0.7;
+}
+
+.container .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.container .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+

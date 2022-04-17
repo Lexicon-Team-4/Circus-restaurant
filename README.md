@@ -31,3 +31,9 @@
 - [x] add background image to the booking page, by default, it is equal to the menu.html,
 - [ ] perhaps center the booking form,
 - [ ] fix issues about width of the image within the form.
+
+## **cart.html**:
+
+- [ ] create this html file,
+- [ ] write javascript that will put selected menu items to the cart html.
+- [ ] write javascript that will either add or remove completely selected objects and update the cart.html.

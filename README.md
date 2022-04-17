@@ -8,19 +8,19 @@
 
 ## **menu.html:**
 
-- [x] review the code and make it more readable,
+- [x] review the code,
 - [ ] add the following menu:
-  - vegetarian,
-  - italian,
-  - indian
+  - [ ] vegetarian,
+  - [ ] italian,
+  - [ ] indian
 - [ ] think about colors for the side navigation menu
 
 ## **home.html**
 
-- [ ] add links to the following pages:
+- [ ] On carousel slides, add links to the following pages:
 
-  - menu.html,
-  - events.html
-  - about.html
+  - [ ] menu.html,
+  - [ ] events.html
+  - [ ] about.html
 
 - [ ] Once Gayathri create events page, add one more carouse slide that will link to one of the upcomming events.

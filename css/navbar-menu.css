@@ -132,7 +132,7 @@
 /* Perhaps there is a more simple solution to this using JS,
      anyhow, it was nice exercise..*/
 
-@media (max-width: 885px) {
+@media (max-width: 900px) {
   .navbar {
     background: rgba(128, 128, 128, 0);
     flex-direction: column;

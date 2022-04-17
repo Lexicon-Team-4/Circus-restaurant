@@ -8,7 +8,7 @@
 
 .menu__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 10px 0 30px 0;
 }
@@ -24,7 +24,7 @@
   transition: var(--transition);
   overflow: hidden;
   box-shadow: 0 0 1px gray;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 200ms ease-in;
 }
 
@@ -32,14 +32,14 @@ section {
   margin-top: 8rem;
 }
 
-.central-body section h2 {
-  padding: 20px;
+section h1 {
+  padding-bottom: 15px;
 }
 
 .menu__item:hover {
   border-color: var(--menuPage-navbar-background-hover);
   background: trasparent;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: transform 200ms ease-in;
 }
 
@@ -53,10 +53,19 @@ section {
   width: 100%;
   height: 150px;
   object-fit: cover;
+  filter: brightness(0.8);
+  transition: all 0.5s ease;
+}
+
+.menu__item-image img:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 
 .menu__item h4 {
   margin: 1.2rem 0 2rem;
+  text-align: center
 }
 
 .menu__item.cta {
@@ -98,25 +107,42 @@ section {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #818181;
+  color: #141313;
   display: block;
+  background: rgba(213, 213, 213, 0.5);
   margin-bottom:1rem;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
-  background: var(--menuPage-navbar-color-hover);
+  background: #002323;
 }
 
 @media screen and (max-width: 1024px) {
   .menu__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .menu__container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
-  .sidenav {
+
+  .sidenav a {
     visibility: hidden;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .menu__container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .menu__container {
     grid-template-columns: 1fr;
@@ -125,7 +151,6 @@ section {
 
   .sidenav {
     padding-top: 15px;
-    /* .sidenav; */
   }
 
   .sidenav a {

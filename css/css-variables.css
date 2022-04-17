@@ -1,0 +1,16 @@
+:root {
+  --navbar-color: rgba(249, 242, 242, 1);              /* text color                       */
+  --navbar-color-hover: rgb(255, 248, 149);            /* text color on hover              */
+  --navbar-background: rgba(48, 92, 117, 0.3);         /* navigation menu background       */
+  --navbar-background-hover: rgba(100, 183, 231, 0.8); /* navigation menu background hover */
+  --navbar-transition: all 0.2s ease;                    /* transition, usually on hover     */
+
+
+  /* Previous values
+  --navbar-color: rgba(91, 21, 21, 1);
+  --navbar-color-hover: rgb(243, 214, 214);
+  --navbar-background: rgba(48, 92, 117, 0.47);
+  --navbar-background-hover: rgba(48, 92, 117, 0.8);
+  --navbar-transition: all 1s ease;
+  */
+}

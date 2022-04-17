@@ -1,0 +1,22 @@
+
+html {
+  scroll-behavior: smoth;
+}
+
+::webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url("../images/menu-page-background-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+.central-body {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 70%;
+}

@@ -8,7 +8,7 @@ The same goes for javascript. Each time you have to write something, please crea
 
 **about.html:**
 
-- [ ] reviw the code,
+- [ ] review the code,
 - [ ] fix issues on small screen, navigation menu becomes inactive,
 - [ ] section _Find us here_ should be responsive too.
 

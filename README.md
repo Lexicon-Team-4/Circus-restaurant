@@ -6,7 +6,7 @@
 
 - [ ] review the code,
 - [ ] fix issues on small screen, navigation menu becomes inactive,
-- [ ] section _Find us here_ should be responsive too.
+- [ ] section _**Find us here**_ should be responsive too.
 
 **menu.html:**
 

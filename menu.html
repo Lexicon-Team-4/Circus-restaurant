@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!--
+        Set a relative base path, it should be equal to the
+        folder where index.html is located. This makes life
+        a lot easier since then you can import all the files
+        in a same way as we do from index page. 
+      -->
+    <!-- <base href="../"> -->
+
+    <!-- Allura font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Ms+Madi&family=Neonderthaw&display=swap">
+    
+    <!-- Vendor css below this line -->
+    <link rel="stylesheet" href="css/vendor/bootstrap-5.1.3.min.css">
+    
+    <!-- Our css stiles below this line -->
+    <link rel="stylesheet" href="css/css-variables.css">  <!-- bojan -->
+    <link rel="stylesheet" href="css/navbar-menu.css">    <!-- bojan -->
+    
+    <link rel="stylesheet" href="css/central-body.css">   <!-- sara  -->
+    <link rel="stylesheet" href="css/Menu.css">           <!-- sara  -->
+
+  
+    <title>Circus Restaurant</title>
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="restaurant-title">
+        <a href="index.html">
+          <img class="logo-img" src="images/peeka-boo-logo.png">
+        </a>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li><a class="navItem" href="index.html">Home</a></li>
+          <li><a class="navItem" href="about.html">About</a></li>
+          <li><a class="active-link" href="menu.html">Menu</a></li>
+          <li><a class="navItem" href="events.html">Events</a></li>
+          <li><a class="navItem" href="#">Booking</a></li>
+          <li><a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+    </nav>
+
+    <div class="central-body">
+      <section id="Menu">
+        <!-- Titles and headers : -->
+        
+        <div class="sidenav">
+          <!-- I (bojan) reorganised the following lines so it makes easier reading the code -->
+          <!-- The content, however, is not changed! -->
+
+          <a href="#Starter">
+            <i class="fa-solid fa-cheese" Style="padding:2px; margin-right:3px;"></i>
+            Starter
+          </a>
+
+          <a href="#Meal">
+            <i class="fa-solid fa-bowl-rice" Style="padding:2px; margin-right:3px;"></i>
+            Meals
+          </a>
+          
+          <a href="#Burgers">
+            <i class="fa-solid fa-burger" Style="padding:2px; margin-right:3px;"></i>
+            Bugers
+          </a>
+
+          <a href="#Drinks">
+            <i class="fa-solid fa-wine-glass" Style="padding:2px; margin-right:6px;"></i>
+            Drinks
+          </a>
+          
+          <a href="#Vegetarian">
+            <i class="fa-solid fa-seedling" Style="padding:2px; margin-right:3px;"></i>
+            Vegetarian
+          </a>
+
+          <a href="#italian">
+            <i class="fa-solid fa-pizza-slice" Style="padding:2px; margin-right:5px;"></i>
+            Italian
+          </a>
+
+          <a href="#Indian">
+            <i class="fa-solid fa-pepper-hot" Style="padding:2px; margin-right:5px;"></i>
+            Indian
+          </a>
+        </div>
+        
+        <h1>Select your Meal</h1>
+
+        <!-- Meals  -->
+        <h2 id="Meal">Meals</h2><hr>
+        <div class="menu__container">
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/Meals/chicken.jpg" alt="{title}"/>
+            </div>
+            <h4>Chicken meal</h4>
+            <small></small>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/Meals/meatballs.jpg" alt="{title}"/>
+            </div>
+            <h4>Meatballs</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/Meals/pizza.jpg" alt="{title}"/>
+            </div>
+            <h4>Pizza</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/Meals/salmon.jpg" alt="{title}"/>
+            </div>
+            <h4>Salmon</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+          
+        </div>
+
+
+        <!-- Drinks -->
+        <h2 id="Drinks">Drinks</h2><hr>
+        <div class="menu__container">
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/drinks/Orange.jpg" alt="{title}"/>
+            </div>
+            <h4>Orange Juice</h4>
+            <small></small>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/drinks/lemon.jpg" alt="{title}"/>
+            </div>
+            <h4>Lemon Juice</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/drinks/softDrink.jpg" alt="{title}"/>
+            </div>
+            <h4>soft drinks</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/drinks/berreis.jpg" alt="{title}"/>
+            </div>
+            <h4>Strawberry Juice</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+        </div>
+
+
+        <!-- #Starter  -->
+        <h2 id="Starter">Starter Menu</h2><hr>
+        <div class="menu__container">
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/Starter/Nanbread.jpg" alt="{title}"/>
+            </div>
+            <h4>Naan Bread</h4>
+            <small></small>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/Starter/Starter3.jpg" alt="{title}"/>
+            </div>
+            <h4>Starter 3</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/Starter/starter2.jpg" alt="{title}"/>
+            </div>
+            <h4>Starter 2</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+          
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/Starter/Starter1.jpg" alt="{title}"/>
+            </div>
+            <h4>Starter 1</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- #Burgers -->
+        <h2 id="Burgers">Burgers</h2><hr>
+        <div class="menu__container">
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/burgers/burgerwithfries.jpg" alt="{title}"/>
+            </div>
+            <h4>Burger & fries</h4>
+            <small></small>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/burgers/burgr-cheese.jpg" alt="{title}"/>
+            </div>
+            <h4>Cheeseburger</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/burgers/spieacl burger.jpg" alt="{title}"/>
+            </div>
+            <h4>Special burger</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+          <article class="menu__item">
+            <div class="menu__item-image">
+              <img src="images/menu/burgers/vegoburger.jpg" alt="{title}"/>
+            </div>
+            <h4>Vego burger</h4>
+            <div class="menu__item.cta">
+              <a class="btn"> Add to Card </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </div>
+    
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/vendor/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/vendor/popper-1.12.9.min.js"></script>
+    <script src="js/vendor/bootstrap-4.0.0.min.js"></script>
+    
+    <script src="js/navbar.js"></script>
+    <script src="js/carousel.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <!-- This Script is for adding the icons  -->
+    <script src="js/vendor/font-awesome-kit.js"></script>
+
+    
+    <script>
+      console.log("height " + window.innerHeight)
+      console.log("width  " + window.innerWidth)
+    </script>
+    
+  </body>
+</html>

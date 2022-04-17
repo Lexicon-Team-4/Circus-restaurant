@@ -16,3 +16,13 @@
   - italian,
   - indian
 - [ ] think about colors for the side navigation menu
+
+**home.html**
+
+- [ ] add links to the following pages:
+
+  - menu.html,
+  - events.html
+  - about.html
+
+- Once Gayathri create events page, add one more carouse slide that will link to one of the upcomming events.

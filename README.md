@@ -32,8 +32,15 @@
 - [ ] perhaps center the booking form,
 - [ ] fix issues about width of the image within the form.
 
-## **cart.html**:
+## **shopping cart**:
 
-- [ ] create this html file,
+- [x] create this either as html or as div container,
 - [ ] write javascript that will put selected menu items to the cart html.
-- [ ] write javascript that will either add or remove completely selected objects and update the cart.html.
+- [x] write javascript that will either add or remove completely selected objects and update the cart total.
+
+## **events.html**:
+
+- [x] review the code,
+- [ ] friday events, fix responsiveness
+- [ ] saturday events, fix responsiveness
+- [ ] if time allow us, write a javascript that will return something once a user clicks on every of these shows.

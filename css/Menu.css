@@ -68,13 +68,8 @@ section h1 {
   text-align: center
 }
 
-.menu__item.cta {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.btn {
+.add-to-cart-btn {
+  text-decoration: none;
   width: max-content;
   display: inline-block;
   color: var(--menuPage-navbar-color);
@@ -85,7 +80,7 @@ section h1 {
   transition: var(--transition);
 }
 
-.btn:hover {
+.add-to-cart-btn:hover {
   background: var(--menuPage-navbar-background-hover);
   color: var(--menuPage-navbar-color-hover);
   border-color: transparent;

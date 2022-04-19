@@ -1,0 +1,140 @@
+
+
+.shopping-cart {
+  position: absolute;
+  top: 0px;
+  right: -100%;
+  width: 500px;
+  min-height: 300px;
+  max-height: 700px;
+  background-color: rgba(240, 248, 255, 1);
+  z-index: 99;
+  box-shadow: -2px 0 8px hsl(0 4% 15% / 10%);
+  padding: 20px;
+  transition: all 1s ease;
+  overflow-y: scroll;
+}
+
+.shopping-cart.active {
+  right: 0px;
+}
+
+#close-cart {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+#close-cart:hover {
+  transform: rotate(90deg);
+  transition: all 1s ease;
+}
+
+.chart-title {
+  font-family: 'Allura';
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  font-size: 3rem;
+  font-weight: bold;
+  border-bottom: 2px solid grey;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 30% 50% 10%;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 2px solid grey;
+  padding: 12px 12px;
+}
+
+.cart-img {
+  width: 133px;
+  height: 100px;
+  object-fit: cover;
+  padding: 4px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+.cart-img:hover {
+  transform: scale(1.05);
+  transition: all 0.4s ease;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.1rem;
+}
+
+.cart-product-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.cart-price {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.cart-quantity {
+  border: 2px solid grey;
+  outline-color: blueviolet;
+  font-size: 1rem;
+  width: 3rem;
+}
+
+.cart-remove {
+  font-size: 2rem;
+  color: rgb(76, 15, 15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-remove:hover {
+  transform: scale(1.1);
+  color: rgb(205, 10, 10);
+  transition: all 0.3s ease;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  transform: all 0.5s ease;
+}
+
+.total-title {
+  font-weight: 600;
+  font-size: 1.7rem;
+  /* font-family: 'Allura'; */
+}
+
+.total-price {
+  margin-left: 30px;
+  font-size: 1.7rem;
+}
+
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background-color: rgba(205, 10, 10);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-buy:hover {
+  background-color: rgb(53, 44, 44);
+}
+
+
+
+

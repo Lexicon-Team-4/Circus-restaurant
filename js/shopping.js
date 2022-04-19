@@ -62,35 +62,43 @@ function addItem(event) {
   var image = shopProducts.getElementsByClassName('menu__item-image')[0].children[0].src
   var price = shopProducts.getElementsByClassName('item-price')[0].innerText.replace("\:-","")
 
-  addMenuItemToCart(title, image, price)
+  addMenuItemToCart(title, image, price);
   updateTotalPrice();
 }
 
 function addMenuItemToCart(title, image, price) {
-  var cartMenuBox = document.createElement('div')
-  cartMenuBox.classList.add('cart-box')
+  
+
+
+  var cartShopBox = document.createElement('div');
+  cartShopBox.classList.add('cart-box');
 
   var cartItems = document.getElementsByClassName('cart-content')[0]
-  var cartItemsNames = document.getElementsByClassName('cart-product-title')
-
+  var cartItemsNames = cartItems.getElementsByClassName('cart-product-title')
+  
+  console.log(cartItems)
   for (let i = 0; i < cartItemsNames.length; i++) {
-    alert('You have already added this menu item to the cart.')
-    return ;
+    // alert('You have already added this menu item to the cart.')
+    // return ;
+    console.log(cartItemsNames[i])
   }
-}
 
-var cartBoxContent = `<img src="images/menu/drinks/Orange.jpg" class="cart-img">
+
+var cartBoxContent = `<img src="${image}" class="cart-img">
                       <div class="detail-box">
-                        <div class="cart-product-title">Orange juice</div>
-                        <div class="cart-price">29.90:-</div>
+                        <div class="cart-product-title">${title}</div>
+                        <div class="cart-price">${price}:-</div>
                         <input type="number" value="1" class="cart-quantity">
                       </div>
                       <ion-icon name="trash-outline" class="cart-remove"></ion-icon>`;
-cartMenuBox.innerHTML = cartBoxContent
-cartItems.append(cartMenuBox)
-cartMenuBox.getElementsByClassName('cart-remove')[0].addEventListener('click', removeCartItem);
-cartMenuBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged);
+cartShopBox.innerHTML = cartBoxContent
+cartItems.append(cartShopBox)
 
+cartShopBox.getElementsByClassName('cart-remove')[0]
+           .addEventListener('click', removeCartItem);
+cartShopBox.getElementsByClassName('cart-quantity')[0]
+           .addEventListener('change', quantityChanged);
+}
 
 
 

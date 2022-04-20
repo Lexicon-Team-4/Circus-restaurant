@@ -16,6 +16,10 @@ html {
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
+body{
+  background-image: url("../images/events/background-event.jpg");
+}
+
 
 .banner {
   width: 100%;
@@ -55,7 +59,7 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  padding: 171px 17.2vw;
+  padding: 200px 15.2vw;
 }
 
 .event-category {
@@ -94,8 +98,6 @@ html {
   flex: 0 0 auto;
   width: 300px;
   height: 400px;
-
-
 }
 
 .event-image {
@@ -110,6 +112,11 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.booking a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .booking {
@@ -158,10 +165,12 @@ html {
   width: 100%;
   height: 100px;
   padding-top: 10px;
+  text-align: center;
 }
 
 .event-person {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .event-description {
@@ -172,6 +181,7 @@ html {
   text-transform: capitalize;
   margin: 5px 0;
   font-size: 20px;
+  margin-bottom: 10rem;
 }
 
 .timings {

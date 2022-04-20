@@ -15,7 +15,8 @@
   top: 0px;
   padding-top: 0px;
   width: 100%;
-  height: 600px;
+  height: auto;
+  max-height: 600px;
   z-index: -1px;
 }
 
@@ -51,7 +52,7 @@
 .container .title h1::after {
   content: "";
   height: 1px;
-  width: 500px;
+  width: auto;
   background-color: maroon;
   border-radius: 25px;
   display: block;
@@ -108,17 +109,6 @@
 
 }
 
-.timings h2::after {
-  content: "";
-  height: 1px;
-  width: 400px;
-  background-color: maroon;
-  border-radius: 25px;
-  display: block;
-  margin: auto;
-
-}
-
 .find {
   text-align: center;
   margin-top: 8%;
@@ -134,6 +124,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  width:100%;
 }
 
 .address {

@@ -75,7 +75,7 @@ function updateCart() {
 
 // define a function which will add items to the cart
 function addItem(event) {
-  var button = event.target
+  var button       = event.target
   var shopProducts = button.parentElement
   
   // first define price, image and title for the menu card on which we click
@@ -156,15 +156,15 @@ function updateTotalPrice() {
   var totalItems  = 0
   
   for (let i = 0; i < cartItems.length; i++) {
-    var cartItem = cartItems[i]
-    var priceItem = cartItem.getElementsByClassName('cart-price')[0]
+    var cartItem     = cartItems[i]
+    var priceItem    = cartItem.getElementsByClassName('cart-price')[0]
     var quantityItem = cartItem.getElementsByClassName('cart-quantity')[0]
     
     var quantity = Number(quantityItem.value)
-    totalItems += quantity
+    totalItems  += quantity
     var price    = parseFloat(priceItem.innerHTML.replace(":-", ""))
-    total += quantity * price
-    total = Math.round(total * 100) / 100
+    total       += quantity * price
+    total        = Math.round(total * 100) / 100
   }
   
   // update total price

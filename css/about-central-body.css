@@ -56,7 +56,7 @@
 .container .title h1::after {
   content: "";
   height: 1px;
-  width: 500px;
+  width: auto;
   background-color: maroon;
   border-radius: 25px;
   display: block;
@@ -110,16 +110,6 @@
   font-size: 40px;
 }
 
-.timings h2::after {
-  content: "";
-  height: 1px;
-  width: 400px;
-  background-color: maroon;
-  border-radius: 25px;
-  display: block;
-  margin: auto;
-}
-
 .find {
   text-align: center;
   margin-top: 8%;
@@ -135,6 +125,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  width:100%;
 }
 
 .address {

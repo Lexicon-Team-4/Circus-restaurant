@@ -29,7 +29,7 @@
 ## **events.html**:
 
 - [x] review the code,
-- [ ] put carousel behind navigation menu,
+- [x] put carousel behind navigation menu,
 - [ ] friday events, fix responsiveness,
 - [ ] saturday events, fix responsiveness,
 - [x] if time allow us, write a javascript that will return something once a user clicks on every of these shows. Gayathri took care of this part.

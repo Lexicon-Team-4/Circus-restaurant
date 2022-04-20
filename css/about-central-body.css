@@ -18,7 +18,8 @@
   top: 0px;
   padding-top: 0px;
   width: 100%;
-  position: relative; /*  Carousel behind */
+  position: relative;
+  /*  Carousel behind */
   top: 0px;
   height: 600px;
   z-index: -1px;
@@ -125,7 +126,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  width:100%;
+  width: 100%;
 }
 
 .address {
@@ -136,11 +137,10 @@
   border-style: solid;
   border-left-width: 15px;
   padding: 60px;
-  margin-top: 39px;
   padding: 90px;
 }
 
-.newsletter h4{
+.newsletter h4 {
   font-family: 'Allura', 'Neonderthaw', cursive;
   color: rgba(48, 92, 117, 0.47);
   font-size: 30px;
@@ -166,7 +166,7 @@
   transition: 1s ease;
 }
 
-.social h5{
+.social h5 {
   font-family: 'Allura', 'Neonderthaw', cursive;
   color: rgba(48, 92, 117, 0.47);
   font-size: 30px;

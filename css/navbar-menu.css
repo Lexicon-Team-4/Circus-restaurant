@@ -97,7 +97,9 @@
   border-radius: 50%;
   position: fixed;
   top: 90px;
-  right: 2px;
+  color: var(--navbar-color);
+  font-size: 2.5rem;
+  right: 4px;
   background: var(--navbar-background);
 }
 
@@ -106,6 +108,21 @@
   transform: scale(1.15);
   transition: var(--navbar-transition);
 }
+
+.items-in-cart {
+  position: fixed;
+  top: 85px;
+  right: 4px;
+  font-size: 0.9rem;
+  background-color: var(--navbar-background);
+  color: var(--navbar-color);
+  border: 1px solid var(--navbar-color);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
 
 .toggle-button {
   position: absolute;

@@ -29,8 +29,8 @@ html, body {
 
 #close-cart {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 4px;
+  right: 4px;
   font-size: 2rem;
   cursor: pointer;
   transition: all 1s ease;

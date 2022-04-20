@@ -77,7 +77,7 @@ function updateCart() {
 function addItem(event) {
   var button = event.target
   var shopProducts = button.parentElement
-
+  
   // first define price, image and title for the menu card on which we click
   var title = shopProducts.getElementsByClassName('item-title')[0].innerText
   var image = shopProducts.getElementsByClassName('menu__item-image')[0].children[0].src
@@ -86,15 +86,16 @@ function addItem(event) {
   // pass those 3 variables to a new function
   addMenuItemToCart(title, image, price);
   updateTotalPrice();
+  updateCounter();
 }
 
 
 // the following function wil actually add an item to the order cart.
 // if the item is already added, it will give alert.
 function addMenuItemToCart(title, image, price) {
-  var cartShopBox = document.createElement('div');
-  cartShopBox.classList.add('cart-box');
-
+  var cartMenuBox = document.createElement('div');
+  cartMenuBox.classList.add('cart-box');
+  
   var cartItems      = document.getElementsByClassName('cart-content')[0]
   // var cartItemsNames = document.getElementsByClassName('cart-product-title')
   
@@ -117,12 +118,12 @@ function addMenuItemToCart(title, image, price) {
                           <input type="number" value="1" class="cart-quantity">
                         </div>
                         <ion-icon name="trash-outline" class="cart-remove"></ion-icon>`;
-  cartShopBox.innerHTML = cartBoxContent
-  cartItems.append(cartShopBox)
+  cartMenuBox.innerHTML = cartBoxContent
+  cartItems.append(cartMenuBox)
   
-  cartShopBox.getElementsByClassName('cart-remove')[0]
+  cartMenuBox.getElementsByClassName('cart-remove')[0]
              .addEventListener('click', removeCartItem);
-  cartShopBox.getElementsByClassName('cart-quantity')[0]
+  cartMenuBox.getElementsByClassName('cart-quantity')[0]
              .addEventListener('change', quantityChanged);
 }
 
@@ -133,26 +134,29 @@ function removeCartItem(event) {
   var buttonClicked = event.target
   buttonClicked.parentElement.remove();
   updateTotalPrice();
+  updateCounter();
 }
 
 // define a function which will update the change in quantity of
 // the selected menu item
 function quantityChanged(event) {
   var input = event.target;
-  console.log(input, input.value)
   // check if less than or equal to zero, if, then make it equal to 1
   if (isNaN(input.value) || input.value <= 0){
     input.value = 1;
   }
   updateTotalPrice();
+  updateCounter();
 }
 
 
-// define a function that will update the total price 
+// define a function that will update the total price,
+// it will also update total number of items in the cart
 function updateTotalPrice() {
   var cartContent = document.getElementsByClassName('cart-content')[0]
   var cartItems   = cartContent.getElementsByClassName('cart-box')
   var total       = 0
+  var totalItems  = 0
   
   for (let i = 0; i < cartItems.length; i++) {
     var cartItem = cartItems[i]
@@ -160,9 +164,15 @@ function updateTotalPrice() {
     var quantityItem = cartItem.getElementsByClassName('cart-quantity')[0]
     
     var quantity = Number(quantityItem.value)
+    totalItems += quantity
     var price    = parseFloat(priceItem.innerHTML.replace(":-", ""))
     total += quantity * price
     total = Math.round(total * 100) / 100
   }
+  
+  // update total price
   document.getElementsByClassName('total-price')[0].innerText = total + " SEK"
+
+  // update total number of items in the cart
+  document.getElementsByClassName('items-in-cart')[0].innerText = totalItems
 }

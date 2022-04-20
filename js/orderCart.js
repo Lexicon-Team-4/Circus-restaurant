@@ -16,13 +16,15 @@
 
 // Let's get to work :)
 
+
+
 // get objects for cartIcon, cart and cartClose
 let cartIcon  = document.querySelector("#cart-icon")
 let cart      = document.querySelector('.shopping-cart')
 let cartClose = document.querySelector('#close-cart')
 
-// arrow function to open the cart by adding "active" to the classList
-// there are also other ways how to do it, for instance by toggling the
+// arrow function to open the cart by adding "active" class to the classList
+// there are other ways how to do it, for instance by toggling the
 // active class and using the same button to open and close the cart div,
 // similar as we did for the hamburger menu button. This approach, however,
 // feels more natural, to me at least.
@@ -30,6 +32,7 @@ cartIcon.onclick = () => {
   cart.classList.add("active")
   updateCart()
 }
+
 // arrow function to close the cart by removing "active" from the classList
 cartClose.onclick = () => {
   cart.classList.remove("active")
@@ -43,7 +46,7 @@ if (document.readyState == "loading") {
 }
 
 // define function updateCart()
-// add eventListener to each button in our shopping cart, so that once
+// add eventListener to each button in our order cart, so that once
 // it is clicked, it will remove an item from the cart
 // loop over all elements with class name "cart-remove"
 function updateCart() {
@@ -60,7 +63,7 @@ function updateCart() {
     var input = quantityInputs[i]
     input.addEventListener('change', quantityChanged)
   }
-
+  
   // add items to the cart
   var addToCart = document.getElementsByClassName('add-to-cart-btn')
   for (let i = 0; i < addToCart.length; i++){
@@ -74,46 +77,53 @@ function updateCart() {
 function addItem(event) {
   var button = event.target
   var shopProducts = button.parentElement
+
+  // first define price, image and title for the menu card on which we click
   var title = shopProducts.getElementsByClassName('item-title')[0].innerText
   var image = shopProducts.getElementsByClassName('menu__item-image')[0].children[0].src
   var price = shopProducts.getElementsByClassName('item-price')[0].innerText.replace("\:-","")
-
+  
+  // pass those 3 variables to a new function
   addMenuItemToCart(title, image, price);
   updateTotalPrice();
 }
 
+
+// the following function wil actually add an item to the order cart.
+// if the item is already added, it will give alert.
 function addMenuItemToCart(title, image, price) {
-  
-
-
   var cartShopBox = document.createElement('div');
   cartShopBox.classList.add('cart-box');
 
-  var cartItems = document.getElementsByClassName('cart-content')[0]
-  var cartItemsNames = cartItems.getElementsByClassName('cart-product-title')
+  var cartItems      = document.getElementsByClassName('cart-content')[0]
+  var cartItemsNames = document.getElementsByClassName('cart-product-title')
   
-  console.log(cartItems)
-  for (let i = 0; i < cartItemsNames.length; i++) {
-    // alert('You have already added this menu item to the cart.')
-    // return ;
-    console.log(cartItemsNames[i])
+  var elements = document.getElementsByClassName('cart-product-title'), innerHTMLs = [];
+  for ( var i = 0; i < elements.length; ++i ) {
+    
+    // check if item in cart box,
+    // if so, alert and return.
+    if (elements[i].innerHTML == title) {
+      alert("You have already added " + title + " to the cart.")
+      return ;
+    }
   }
 
-
-var cartBoxContent = `<img src="${image}" class="cart-img">
-                      <div class="detail-box">
-                        <div class="cart-product-title">${title}</div>
-                        <div class="cart-price">${price}:-</div>
-                        <input type="number" value="1" class="cart-quantity">
-                      </div>
-                      <ion-icon name="trash-outline" class="cart-remove"></ion-icon>`;
-cartShopBox.innerHTML = cartBoxContent
-cartItems.append(cartShopBox)
-
-cartShopBox.getElementsByClassName('cart-remove')[0]
-           .addEventListener('click', removeCartItem);
-cartShopBox.getElementsByClassName('cart-quantity')[0]
-           .addEventListener('change', quantityChanged);
+  // define a div content that we will add to the cart
+  var cartBoxContent = `<img src="${image}" class="cart-img">
+                        <div class="detail-box">
+                          <div class="cart-product-title">${title}</div>
+                          <div class="cart-price">${price}:-</div>
+                          <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <ion-icon name="trash-outline" class="cart-remove"></ion-icon>`;
+  cartShopBox.innerHTML = cartBoxContent
+  cartItems.append(cartShopBox)
+  
+  cartShopBox.getElementsByClassName('cart-remove')[0]
+             .addEventListener('click', removeCartItem);
+  cartShopBox.getElementsByClassName('cart-quantity')[0]
+             .addEventListener('change', quantityChanged);
 }
 
 

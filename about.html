@@ -34,8 +34,58 @@
   <!-- Overwrite navbar background in this particular page -->
   <style>
     .navbar {
-      background: rgba(48, 92, 117, 0.5);
+      background: rgba(22, 42, 54, 0.6);
+      z-index: 1;
     }
+
+    @media (max-width: 900px) {
+      .navbar {
+        margin-top: -25px;
+        height: 0px;
+        width: 100%;
+        z-index: 5;
+      }
+      
+      .navbar-active {
+        background: var(--navbar-background);
+        height: 350px;
+        width: 100%;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+      
+      .logo-img {
+        position: absolute;
+        top: 20px;
+        transform: scale(0.9);
+        margin: 0 0 0 8px;
+        transition: all 0.3s ease;
+      }
+      
+      .toggle-button {
+        display: flex;
+        transition: all 1s;
+      }
+    }
+    
+    .carousel-img {
+      width: 100%;
+      height: 745px;
+      object-fit: cover;
+      z-index: -1;
+    }
+    
+    .carousel {
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .title {
+      margin-top: 550px;
+    }
+    
   </style>
   <title>Circus Restaurant</title>
 </head>
@@ -69,13 +119,13 @@
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/about/image1.jpg" class="d-block w-100">
+        <img src="images/about/image1.jpg" class="d-block w-100 carousel-img">
       </div>
       <div class="carousel-item">
-        <img src="images/about/image2.jpg" class="d-block w-100">
+        <img src="images/about/image2.jpg" class="d-block w-100 carousel-img">
       </div>
       <div class="carousel-item">
-        <img src="images/about/image3.jpg" class="d-block w-100">
+        <img src="images/about/image3.jpg" class="d-block w-100 carousel-img">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -212,6 +262,14 @@
       interval: 5000, // 5s
       pause: false    // do not stop sliding on hover (they are stopped by default)
     })
+    
+    let carouselImages = $('.carousel-inner').find('img');
+    let numSlides = carouselImages.length;
+    
+    for (let i = 0; i < numSlides; i++) {
+      carouselImages[i].style.width = window.innerHeight + "px";
+    }
+
   </script>
 </body>
 

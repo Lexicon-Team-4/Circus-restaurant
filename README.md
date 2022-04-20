@@ -1,11 +1,5 @@
 # ToDo List
 
-## **about.html:**
-
-- [x] review the code,
-- [ ] fix issues on small screen, navigation menu becomes inactive,
-- [x] section _**Find us here**_ should be responsive too.
-
 ## **menu.html:**
 
 - [x] review the code,
@@ -24,14 +18,6 @@
   - [ ] events.html
   - [ ] about.html
 
-## **booking.html** DONE
-
-- [x] review the code,
-- [x] fix issues on small screen, navigation menu becomes inactive,
-- [x] add background image to the booking page, by default, it is equal to the menu.html,
-- [x] perhaps center the booking form,
-- [x] fix issues about width of the image within the form.
-
 ## **shopping cart**:
 
 - [x] create this either as html or as div container,
@@ -47,3 +33,19 @@
 - [ ] friday events, fix responsiveness,
 - [ ] saturday events, fix responsiveness,
 - [x] if time allow us, write a javascript that will return something once a user clicks on every of these shows. Gayathri took care of this part.
+
+# DONE List
+
+## **about.html:**
+
+- [x] review the code,
+- [x] fix issues on small screen, navigation menu becomes inactive,
+- [x] section _**Find us here**_ should be responsive too.
+
+## **booking.html** DONE
+
+- [x] review the code,
+- [x] fix issues on small screen, navigation menu becomes inactive,
+- [x] add background image to the booking page, by default, it is equal to the menu.html,
+- [x] perhaps center the booking form,
+- [x] fix issues about width of the image within the form.

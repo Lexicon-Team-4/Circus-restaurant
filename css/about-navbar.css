@@ -28,6 +28,8 @@
   }
 
   .toggle-button {
+    position: absolute;
+    top: 50px;
     display: flex;
     transition: all 1s;
   }

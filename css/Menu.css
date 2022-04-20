@@ -1,9 +1,9 @@
 :root {
---menuPage-navbar-color: rgba(91, 21, 21, 1);
---menuPage-navbar-color-hover: rgb(243, 214, 214);
---menuPage-navbar-background: rgba(48, 92, 117, 0.47);
---menuPage-color-light: rgba(255, 255, 255, 0.6);
---menuPage-navbar-background-hover: rgba(48, 92, 117, 0.8);
+  --menuPage-navbar-color: rgba(91, 21, 21, 1);
+  --menuPage-navbar-color-hover: rgb(243, 214, 214);
+  --menuPage-navbar-background: rgba(48, 92, 117, 0.47);
+  --menuPage-color-light: rgba(255, 255, 255, 0.6);
+  --menuPage-navbar-background-hover: rgba(48, 92, 117, 0.8);
 }
 
 .menu__container {
@@ -64,8 +64,9 @@ section h1 {
 }
 
 .menu__item h4 {
-  margin: 1.2rem 0 2rem;
-  text-align: center
+  margin: 1rem 0 1rem;
+  text-align: center;
+  font-size: 14px;
 }
 
 .add-to-cart-btn {
@@ -78,6 +79,8 @@ section h1 {
   cursor: pointer;
   border: 1px solid var(--menuPage-navbar-color);
   transition: var(--transition);
+  margin-left: 1rem;
+  margin-top: 2rem;
 }
 
 .add-to-cart-btn:hover {
@@ -105,12 +108,15 @@ section h1 {
   color: #141313;
   display: block;
   background: rgba(213, 213, 213, 0.5);
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
   background: #002323;
+}
+.item-price {
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {

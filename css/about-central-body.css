@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
 }
 
 #carouselExampleFade {
@@ -15,8 +18,9 @@
   top: 0px;
   padding-top: 0px;
   width: 100%;
-  height: auto;
-  max-height: 600px;
+  position: relative; /*  Carousel behind */
+  top: 0px;
+  height: 600px;
   z-index: -1px;
 }
 
@@ -57,7 +61,6 @@
   border-radius: 25px;
   display: block;
   margin: auto;
-
 }
 
 .container .content .article p {
@@ -84,7 +87,6 @@
   color: #fff;
   background-color: rgba(48, 92, 117, 0.8);
   transition: 1s ease;
-
 }
 
 .timings {
@@ -106,7 +108,6 @@
   font-family: 'Allura', 'Neonderthaw', cursive;
   color: rgba(48, 92, 117, 0.47);
   font-size: 40px;
-
 }
 
 .find {
@@ -135,7 +136,8 @@
   border-style: solid;
   border-left-width: 15px;
   padding: 60px;
-
+  margin-top: 39px;
+  padding: 90px;
 }
 
 .newsletter h4{
@@ -162,7 +164,6 @@
   color: #fff;
   background-color: rgba(48, 92, 117, 0.8);
   transition: 1s ease;
-
 }
 
 .social h5{
@@ -193,6 +194,15 @@
 
 .social .fa-twitter {
   background: #55ACEE;
+}
+
+.container .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.container .fa-twitter {
+  background: #55acee;
   color: white;
 }
 

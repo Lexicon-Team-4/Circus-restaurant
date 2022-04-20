@@ -96,10 +96,10 @@ function addMenuItemToCart(title, image, price) {
   cartShopBox.classList.add('cart-box');
 
   var cartItems      = document.getElementsByClassName('cart-content')[0]
-  var cartItemsNames = document.getElementsByClassName('cart-product-title')
+  // var cartItemsNames = document.getElementsByClassName('cart-product-title')
   
   var elements = document.getElementsByClassName('cart-product-title'), innerHTMLs = [];
-  for ( var i = 0; i < elements.length; ++i ) {
+  for (let i = 0; i < elements.length; ++i) {
     
     // check if item in cart box,
     // if so, alert and return.
@@ -108,7 +108,7 @@ function addMenuItemToCart(title, image, price) {
       return ;
     }
   }
-
+  
   // define a div content that we will add to the cart
   var cartBoxContent = `<img src="${image}" class="cart-img">
                         <div class="detail-box">

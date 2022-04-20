@@ -86,7 +86,6 @@ function addItem(event) {
   // pass those 3 variables to a new function
   addMenuItemToCart(title, image, price);
   updateTotalPrice();
-  updateCounter();
 }
 
 
@@ -134,7 +133,6 @@ function removeCartItem(event) {
   var buttonClicked = event.target
   buttonClicked.parentElement.remove();
   updateTotalPrice();
-  updateCounter();
 }
 
 // define a function which will update the change in quantity of
@@ -146,7 +144,6 @@ function quantityChanged(event) {
     input.value = 1;
   }
   updateTotalPrice();
-  updateCounter();
 }
 
 

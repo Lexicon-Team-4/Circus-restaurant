@@ -9,10 +9,13 @@
   - [x] italian,
   - [x] indian
 - [ ] think about colors for the side navigation menu
+- [ ] change fonts to Allura and Raleway.
+
+# DONE List
 
 ## **home.html**
 
-- [ ] Once Gayathri create events page, add one more carousel slide that will link to one of the upcomming events.
+- [x] Once Gayathri create events page, add one more carousel slide that will link to one of the upcomming events.
 - [x] On carousel slides, add links to the following pages:
   - [x] menu.html,
   - [x] events.html
@@ -22,11 +25,9 @@
 
 - [x] review the code,
 - [x] put carousel behind navigation menu,
-- [ ] friday events, fix responsiveness,
-- [ ] saturday events, fix responsiveness,
+- [x] friday events, fix responsiveness,
+- [x] saturday events, fix responsiveness,
 - [x] if time allow us, write a javascript that will return something once a user clicks on every of these shows. Gayathri took care of this part.
-
-# DONE List
 
 ## **about.html:**
 

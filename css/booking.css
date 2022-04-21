@@ -28,13 +28,17 @@ body {
 .bookingheading {
   text-align: center;
   color: rgb(6, 36, 38);
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Allura', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
 }
 
 .col-md-4 label {
   font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.1rem;
 }
-
 
 .booking-form {
   background-color: #dcf3f8ad;

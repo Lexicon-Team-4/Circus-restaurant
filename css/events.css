@@ -60,9 +60,12 @@ body{
 .event-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   padding: 100px 15.2vw;
-  align-items: flex-end;
+}
+
+.event {
+  width: 90%;
 }
 
 .event-category {
@@ -145,7 +148,6 @@ body{
   color: whitesmoke;
   font-size: 15px;
   border-radius: 15px;
-
 }
 
 .event-card:hover .booking {
@@ -206,7 +208,7 @@ body{
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
 
   .event-container {
     grid-template-columns: 1fr 1fr;
@@ -214,7 +216,7 @@ body{
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 950px) {
   .event-container {
     grid-template-columns: 1fr;
     gap: 1.2rem;

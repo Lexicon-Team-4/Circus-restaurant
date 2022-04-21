@@ -144,5 +144,25 @@ html, body {
 }
 
 
+.rabat-title {
+  color: rgb(64, 63, 63);
+  font-size: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
 
+.rabat-header-item1,
+.rabat-header-item2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
+.price-without-rabat-left,
+.rabat-left {
+  text-align: right;
+}
+
+.price-without-rabat-right,
+.rabat-right {
+  text-align: right;
+}

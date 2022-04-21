@@ -70,7 +70,29 @@ function updateCart() {
     var button = addToCart[i]
     button.addEventListener('click', addItem)
   }
+
+  // add a functionality to the 'Make an order' button.
+  document.getElementsByClassName('btn-buy')[0].addEventListener('click', orderFood)
+  
 }
+
+// define function orderFood
+// it will prompt a confirm alert and ask whether you want to place an order
+function orderFood() {
+  if (confirm('Please confirm your order.')) {
+    // user confirms order, it will clean the cart and send a message to the user
+    var cartContent = document.getElementsByClassName('cart-content')[0]
+    while (cartContent.hasChildNodes()) {
+      cartContent.removeChild(cartContent.firstChild)
+    }
+    alert('Thank you for your order. It is placed in the que.')
+    updateTotalPrice();
+  console.log('Thing was saved to the database.');
+  } else {
+    // user click cancel, they will simply continue ordering.
+  }
+}
+
 
 
 // define a function which will add items to the cart
@@ -152,8 +174,10 @@ function quantityChanged(event) {
 function updateTotalPrice() {
   var cartContent = document.getElementsByClassName('cart-content')[0]
   var cartItems   = cartContent.getElementsByClassName('cart-box')
-  var total       = 0
-  var totalItems  = 0
+  var totalWithRabat = 0,
+      totalItems     = 0,
+      total          = 0,
+      rabat          = 0;
   
   for (let i = 0; i < cartItems.length; i++) {
     var cartItem     = cartItems[i]
@@ -167,9 +191,25 @@ function updateTotalPrice() {
     total        = Math.round(total * 100) / 100
   }
   
-  // update total price
-  document.getElementsByClassName('total-price')[0].innerText = total + " SEK"
+  if (total >= 500) {
+    totalWithRabat = Math.round(0.9 * total * 100) / 100
+    rabat          = Math.round((total - totalWithRabat) * -100) / 100
+  } else {
+    totalWithRabat = total
+    rabat          = 0
+  }
 
-  // update total number of items in the cart
-  document.getElementsByClassName('items-in-cart')[0].innerText = totalItems
+  // update price without rabat
+  document.getElementsByClassName('price-without-rabat-right')[0].innerText = total + " SEK"
+
+  // update rabat
+  document.getElementsByClassName('rabat-right')[0].innerText = rabat + " SEK"
+  
+  // update total price
+  document.getElementsByClassName('total-price')[0].innerText = totalWithRabat + " SEK"
+
+  // update the total number of items in the cart
+  totalItems > 0
+    ? document.getElementsByClassName('items-in-cart')[0].innerText = totalItems
+    : document.getElementsByClassName('items-in-cart')[0].innerText = ""
 }

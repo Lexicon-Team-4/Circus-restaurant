@@ -15,8 +15,10 @@
   <!-- <base href="../"> -->
   
   <!-- Allura font -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Allura&family=Ms+Madi&family=Neonderthaw&display=swap">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Ms+Madi&family=Neonderthaw&display=swap"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Raleway:wght@100;200&display=swap" rel="stylesheet">
   
   <!-- Vendor css below this line -->
   <link rel="stylesheet" href="css/vendor/bootstrap-5.1.3.min.css">
@@ -24,13 +26,10 @@
   <!-- Our css stiles below this line -->
   <link rel="stylesheet" href="css/css-variables.css"> <!-- bojan -->
   <link rel="stylesheet" href="css/navbar-menu.css"> <!-- bojan -->
-
+  <link rel="stylesheet" href="css/footer.css"> <!-- iman  -->
+  <link rel="stylesheet" href="css/orderCart.css"><!-- bojan -->
   <link rel="stylesheet" href="css/central-body.css"> <!-- sara  -->
-  <!-- <link rel="stylesheet" href="css/Menu.css"> -->
-  <!-- sara  -->
-<link rel="stylesheet" href="css/footer.css"> <!-- iman  -->
-  <link rel="stylesheet" href="css/orderCart.css">
-  <link rel="stylesheet" href="css/Menu.css">
+  <link rel="stylesheet" href="css/Menu.css"><!-- sara  -->
   <title>Circus Restaurant</title>
   
 </head>
@@ -106,8 +105,6 @@
       <!-- Titles and headers : -->
 
       <div class="sidenav">
-        <!-- I (bojan) reorganised the following lines so it makes easier reading the code -->
-        <!-- The content, however, is not changed! -->
 
         <a href="#Starter">
           <i class="fa-solid fa-cheese" Style="padding:2px; margin-right:3px;"></i>
@@ -145,10 +142,10 @@
         </a>
       </div>
 
-      <h1>Select your Meal</h1>
-    <!-- #Starter  -->
-    <h2 id="Starter">Starter Menu</h2>
-    <hr>
+      <h1 class="select-meal">Select your Meal</h1>
+      <!-- #Starter  -->
+      <h2 id="Starter">Starter Menu</h2>
+      <hr>
     <div class="menu__container">
 
       <article class="menu__item">
@@ -157,7 +154,7 @@
         </div>
         <h4 class="item-title">Naan Bread</h4>
         <h5 class="item-price">49:-</h5>
-        <a class="add-to-cart-btn"> Add to Card </a>
+        <a class="add-to-cart-btn"> Add to Cart </a>
       </article>
 
       <article class="menu__item">
@@ -175,7 +172,7 @@
         </div>
         <h4 class="item-title">Starter 2</h4>
         <h5 class="item-price">69:-</h5>
-        <a class="add-to-cart-btn"> Add to Card </a>
+        <a class="add-to-cart-btn"> Add to Cart </a>
       </article>
 
       <article class="menu__item">
@@ -184,7 +181,7 @@
         </div>
         <h4 class="item-title">Starter 1</h4>
         <h5 class="item-price">75:-</h5>
-        <a class="add-to-cart-btn"> Add to Card </a>
+        <a class="add-to-cart-btn"> Add to Cart </a>
       </article>
 
     </div>
@@ -208,7 +205,7 @@
           </div>
           <h4 class="item-title">Meatballs</h4>
           <h5 class="item-price">53:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
         <article class="menu__item">
@@ -217,7 +214,7 @@
           </div>
           <h4 class="item-title">Pizza</h4>
           <h5 class="item-price">70:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
         <article class="menu__item">
@@ -226,7 +223,7 @@
           </div>
           <h4 class="item-title">Salmon</h4>
           <h5 class="item-price">80:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
       </div>
@@ -241,9 +238,9 @@
           <div class="menu__item-image">
             <img src="images/menu/burgers/burgerwithfries.jpg"/>
           </div>
-          <h4 class="item-title">burger with fries</h4>
+          <h4 class="item-title">Burger with fries</h4>
           <h5 class="item-price">49:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
         <article class="menu__item">
@@ -261,7 +258,7 @@
           </div>
           <h4 class="item-title">Special burger</h4>
           <h5 class="item-price">69:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
         <article class="menu__item">
@@ -270,7 +267,7 @@
           </div>
           <h4 class="item-title">Vegetarian burger</h4>
           <h5 class="item-price">75:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
       </div>
@@ -285,7 +282,7 @@
     </div>
     <h4 class="item-title">Orange Juice</h4>
     <h5 class="item-price">30:-</h5>
-    <a class="add-to-cart-btn"> Add to Card </a>
+    <a class="add-to-cart-btn"> Add to Cart </a>
   </article>
 
   <article class="menu__item">
@@ -294,7 +291,7 @@
     </div>
     <h4 class="item-title">Lemon Juice</h4>
     <h5 class="item-price">30:-</h5>
-    <a class="add-to-cart-btn"> Add to Card </a>
+    <a class="add-to-cart-btn"> Add to Cart </a>
   </article>
 
   <article class="menu__item">
@@ -303,7 +300,7 @@
     </div>
     <h4 class="item-title">Soft drinks</h4>
     <h5 class="item-price">30:-</h5>
-    <a class="add-to-cart-btn"> Add to Card </a>
+    <a class="add-to-cart-btn"> Add to Cart </a>
   </article>
 
   <article class="menu__item">
@@ -312,7 +309,7 @@
     </div>
     <h4 class="item-title">Strawberry Juice</h4>
     <h5 class="item-price">30:-</h5>
-    <a class="add-to-cart-btn"> Add to Card </a>
+    <a class="add-to-cart-btn"> Add to Cart </a>
   </article>
 
 </div>
@@ -327,7 +324,7 @@
           </div>
           <h4 class="item-title">Egg Meal</h4>
           <h5 class="item-price">49:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
         <article class="menu__item">
@@ -336,7 +333,7 @@
           </div>
           <h4 class="item-title">Speacial Vego</h4>
           <h5 class="item-price">53:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
         <article class="menu__item">
@@ -345,7 +342,7 @@
           </div>
           <h4 class="item-title">Vegetarian burger</h4>
           <h5 class="item-price">70:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
         <article class="menu__item">
@@ -354,7 +351,7 @@
           </div>
           <h4 class="item-title">Vego burger</h4>
           <h5 class="item-price">80:-</h5>
-          <a class="add-to-cart-btn"> Add to Card </a>
+          <a class="add-to-cart-btn"> Add to Cart </a>
         </article>
 
       </div>
@@ -369,7 +366,7 @@
              </div>
              <h4 class="item-title">Pasta with Shrimp</h4>
              <h5 class="item-price">70:-</h5>
-             <a class="add-to-cart-btn"> Add to Card </a>
+             <a class="add-to-cart-btn"> Add to Cart </a>
            </article>
    
            <article class="menu__item">
@@ -378,7 +375,7 @@
              </div>
              <h4 class="item-title">Italian Pizza </h4>
              <h5 class="item-price">60:-</h5>
-             <a class="add-to-cart-btn"> Add to Card </a>
+             <a class="add-to-cart-btn"> Add to Cart </a>
            </article>
    
            <article class="menu__item">
@@ -387,7 +384,7 @@
              </div>
              <h4 class="item-title">Seafood Italian Meal</h4>
              <h5 class="item-price">80:-</h5>
-             <a class="add-to-cart-btn"> Add to Card </a>
+             <a class="add-to-cart-btn"> Add to Cart </a>
            </article>
    
            <article class="menu__item">
@@ -396,7 +393,7 @@
              </div>
              <h4 class="item-title">Vegetarian Pasta <h4>
              <h5 class="item-price">30:-</h5>
-             <a class="add-to-cart-btn"> Add to Card </a>
+             <a class="add-to-cart-btn"> Add to Cart </a>
            </article>
    
          </div>
@@ -411,7 +408,7 @@
              </div>
              <h4 class="item-title">Chili Salmon</h4>
              <h5 class="item-price">70:-</h5>
-             <a class="add-to-cart-btn"> Add to Card </a>
+             <a class="add-to-cart-btn"> Add to Cart </a>
            </article>
    
            <article class="menu__item">
@@ -420,7 +417,7 @@
              </div>
              <h4 class="item-title">Indian Dessert </h4>
              <h5 class="item-price">60:-</h5>
-             <a class="add-to-cart-btn"> Add to Card </a>
+             <a class="add-to-cart-btn"> Add to Cart </a>
            </article>
    
            <article class="menu__item">
@@ -429,7 +426,7 @@
              </div>
              <h4 class="item-title">Seafood Indian Meal </h4>
              <h5 class="item-price">80:-</h5>
-             <a class="add-to-cart-btn"> Add to Card </a>
+             <a class="add-to-cart-btn"> Add to Cart </a>
            </article>
    
            <article class="menu__item">
@@ -438,7 +435,7 @@
              </div>
              <h4 class="item-title">Tikka Massala <h4>
              <h5 class="item-price">80:-</h5>
-             <a class="add-to-cart-btn"> Add to Card </a>
+             <a class="add-to-cart-btn"> Add to Cart </a>
            </article>
    
          </div>

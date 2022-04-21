@@ -1,5 +1,7 @@
 # ToDo List
 
+# DONE List
+
 ## **menu.html:**
 
 - [x] review the code,
@@ -8,10 +10,8 @@
   - [x] vegetarian,
   - [x] italian,
   - [x] indian
-- [ ] think about colors for the side navigation menu
-- [ ] change fonts to Allura and Raleway.
-
-# DONE List
+- [x] think about colors for the side navigation menu
+- [x] change fonts to Allura and Raleway.
 
 ## **home.html**
 

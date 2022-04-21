@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-image: url("../images/menu-page-background-image.jpg");
+  background-image: url("../images/book1.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,22 +15,36 @@ body {
 }
 
 .central-body {
-  margin: 0 auto;
+  margin: 0;
   padding-bottom: 20px;
-  width: 70%;
+  width: 100%;
+}
+
+.col-md-4 {
+  /* padding: 0 10% 0 10%; */
+  width: 60%;
 }
 
 .bookingheading {
   text-align: center;
-  color: aliceblue;
+  color: rgb(6, 36, 38);
+  font-family: 'Raleway', sans-serif;
 }
+
+.col-md-4 label {
+  font-size: 1.5rem;
+}
+
 
 .booking-form {
   background-color: #dcf3f8ad;
   color: #0C0A3E;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.h-blue, h4 {
+.h-blue,
+h4 {
   background-color: #0C0A3E;
   color: #EEF4D4;
 }
@@ -40,13 +54,15 @@ body {
   border-color: white;
   color: #3f51b5;
   font-weight: bold;
+  font-size: 1.7rem;
   width: 200px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: white;
-  border-color: white;
-  color: #3f51b5;
+  background-color: #3f51b5;
+  color: white;
+  transition: all 0.3s ease;
 }
 
 .center {

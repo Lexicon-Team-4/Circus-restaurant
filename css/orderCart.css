@@ -1,9 +1,14 @@
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .shopping-cart {
   position: absolute;
-  top: 0px;
+  top: 90px;
   right: -510px;
+  /* display: none; */
+  /* visibility: hidden; */
   width: 500px;
   min-height: 300px;
   max-height: 700px;
@@ -11,18 +16,21 @@
   z-index: 99;
   box-shadow: -2px 0 8px hsl(0 4% 15% / 10%);
   padding: 20px;
-  transition: all 1s ease;
   overflow-y: scroll;
+  transition: all 1.3s ease;
 }
 
 .shopping-cart.active {
   right: 0px;
+  /* display: block; */
+  /* visibility: visible; */
+  transition: all 1.3s ease;
 }
 
 #close-cart {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
+  top: 4px;
+  right: 4px;
   font-size: 2rem;
   cursor: pointer;
   transition: all 1s ease;

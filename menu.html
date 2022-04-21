@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="css/central-body.css"> <!-- sara  -->
   <!-- <link rel="stylesheet" href="css/Menu.css"> -->
   <!-- sara  -->
-
-  <link rel="stylesheet" href="css/shoppingCart.css">
+<link rel="stylesheet" href="css/footer.css"> <!-- iman  -->
+  <link rel="stylesheet" href="css/orderCart.css">
   <link rel="stylesheet" href="css/Menu.css">
   <title>Circus Restaurant</title>
   
@@ -50,9 +50,6 @@
         <li><a class="active-link" href="menu.html">Menu</a></li>
         <li><a class="navItem" href="events.html">Events</a></li>
         <li><a class="navItem" href="booking.html">Booking</a></li>
-        <li><a class="cart" href="#">
-            <ion-icon id="cart-icon" name="cart-outline"></ion-icon>
-          </a></li>
       </ul>
     </div>
     <a href="#" class="toggle-button">
@@ -62,66 +59,37 @@
     </a>
   </nav>
 
+  <!-- Cart button outside of the navigation menu -->
+  <a class="cart" href="#"><ion-icon id="cart-icon" name="cart-outline"></ion-icon></a>
+  
+  <!-- Number of items in the cart -->
+  <div class="items-in-cart"></div>
+
+  <div class="shopping-cart">
+    <div class="chart-title">Order cart</div>
+  
+    <!-- Cart Content -->
+    <div class="cart-content">
+  
+      <!-- This div will be updated using javascript -->
+  
+    </div>
+  
+    <!-- Total -->
+    <div class="total">
+      <div class="total-title">Total</div>
+      <div class="total-price">0 SEK</div>
+    </div>
+    <!-- Buy Button -->
+    <button type="button" class="btn-buy">Make an order</button>
+  
+    <!-- Cart Close -->
+    <ion-icon name="close-outline" id="close-cart"></ion-icon>
+  
+  </div>
+
+
   <div class="central-body">
-    <section class="shopping-cart">
-      <div class="chart-title">Shopping cart</div>
-      
-      
-      <!-- Cart Content -->
-      <div class="cart-content">
-
-        <div class="cart-box">
-          <img src="images/menu/drinks/Orange.jpg" class="cart-img">
-          <div class="detail-box">
-            <div class="cart-product-title">Orange juice</div>
-            <div class="cart-price">29.90:-</div>
-            <input type="number" value="1" class="cart-quantity">
-          </div>
-          <!-- Remove Cart -->
-          <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
-        </div>
-        <div class="cart-box">
-          <img src="images/menu/burgers/burgerwithfries.jpg" class="cart-img">
-          <div class="detail-box">
-            <div class="cart-product-title">Burger & fries</div>
-            <div class="cart-price">229:-</div>
-            <input type="number" value="1" class="cart-quantity">
-          </div>
-          <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
-        </div>
-        <div class="cart-box">
-          <img src="images/menu/drinks/berreis.jpg" class="cart-img">
-          <div class="detail-box">
-            <div class="cart-product-title">Strawberry Juice</div>
-            <div class="cart-price">199.99:-</div>
-            <input type="number" value="1" class="cart-quantity">
-          </div>
-          <ion-icon name="trash-outline" class="cart-remove"></ion-icon>
-        </div>
-
-      </div>
-      
-      <!-- Total -->
-      <div class="total">
-        <div class="total-title">Total</div>
-        <div class="total-price">199</div>
-      </div>
-      <!-- Buy Button -->
-      <button type="button" class="btn-buy">Make an order</button>
-
-      <!-- Cart Close -->
-      <ion-icon name="close-outline" id="close-cart"></ion-icon>
-
-    </section>
-
-
-
-     <script>
-       let all = document.getElementsByClassName('btn')
-       console.log(all)
-     </script>
-
-
     <section id="Menu">
       <!-- Titles and headers : -->
 
@@ -141,7 +109,7 @@
 
         <a href="#Burgers">
           <i class="fa-solid fa-burger" Style="padding:2px; margin-right:3px;"></i>
-          Bugers
+          Burgers
         </a>
 
         <a href="#Drinks">
@@ -252,10 +220,6 @@
       </div>
 
 
-      
-
-
-  
       <!-- #Burgers  -->
       <h2 id="Burgers">Burgers Menu</h2>
       <hr>
@@ -276,14 +240,14 @@
           </div>
           <h4 class="item-title">Burger with Cheese</h4>
           <h5 class="item-price">60:-</h5>
-          <a class="add-to-cart-btn"> Add to Card</a>
+          <a class="add-to-cart-btn">Add to Card</a>
         </article>
 
         <article class="menu__item">
           <div class="menu__item-image">
             <img src="images/menu/burgers/spieacl burger.jpg"/>
           </div>
-          <h4 class="item-title">Special burger/h4>
+          <h4 class="item-title">Special burger</h4>
           <h5 class="item-price">69:-</h5>
           <a class="add-to-cart-btn"> Add to Card </a>
         </article>
@@ -292,7 +256,7 @@
           <div class="menu__item-image">
             <img src="images/menu/burgers/vegoburger.jpg"/>
           </div>
-          <h4 class="item-title">Vegetarian burger/h4>
+          <h4 class="item-title">Vegetarian burger</h4>
           <h5 class="item-price">75:-</h5>
           <a class="add-to-cart-btn"> Add to Card </a>
         </article>
@@ -468,9 +432,32 @@
          </div>
     </section>
   </div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <img class="logo-img" src="images/peeka-boo-logo.png">
+      <h5>PeekaBoo-Restaurant</h5>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi
+        placeat.
+      </p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#" "><i class=" fab fa-instagram"></i></a>
+  
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>PeekaBoo </span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+  
+        Designed by <a href="#"">Team 4</a>
+              </div>
+            </div>
+          </footer><!-- End Footer -->
 
-
-
+  
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/vendor/jquery-3.2.1.slim.min.js"></script>
@@ -479,8 +466,8 @@
 
   <script src="js/navbar.js"></script>
   <script src="js/carousel.js"></script>
-  <script src="js/shopping.js"></script>
-
+  <script src="js/orderCart.js"></script>
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

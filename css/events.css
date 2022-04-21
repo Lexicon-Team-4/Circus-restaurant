@@ -28,25 +28,23 @@ body{
     url(../images/events/magician.jpg);
   background-size: cover;
   background-position: center;
-  margin-top: 0px;
-
 }
 
 .content {
   width: 100%;
   position: absolute;
   top: 40%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   text-align: center;
-
 }
 
 .content h1 {
   font-size: 70px;
+  font-size: 4rem;
   margin-top: 125px;
   font-family: 'Allura', 'Neonderthaw', cursive;
   color: white;
-  transition: transform 1.8s;
+  transition: all 0.3s;
 }
 
 .content h1:hover {
@@ -60,6 +58,13 @@ body{
   line-height: 25px;
   font-size: 24px;
   color: white;
+  transition: all 0.3s;
+}
+
+.content h1:hover,
+.content p:hover {
+  color: var(--navbar-color-hover);
+  transition: all 0.3s;
 }
 
 .event-container {
@@ -212,6 +217,7 @@ body{
 }
 
 @media screen and (max-width: 950px) {
+  
   .event-container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;

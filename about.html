@@ -30,14 +30,10 @@
   <link rel="stylesheet" href="css/navbar-menu.css">
   <!-- <link rel="stylesheet" href="css/carousel-home.css"> -->
   <link rel="stylesheet" href="css/about-central-body.css">
+  <link rel="stylesheet" href="css/about-navbar.css">
 
   <!-- Overwrite navbar background in this particular page -->
-  <style>
-    .navbar {
-      background: rgba(48, 92, 117, 0.5);
-    }
-  </style>
-  <title>Circus Restaurant</title>
+    <title>Circus Restaurant</title>
 </head>
 
 <body>
@@ -69,13 +65,13 @@
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/about/image1.jpg" class="d-block w-100">
+        <img src="images/about/image1.jpg" class="d-block w-100 carousel-img">
       </div>
       <div class="carousel-item">
-        <img src="images/about/image2.jpg" class="d-block w-100">
+        <img src="images/about/image2.jpg" class="d-block w-100 carousel-img">
       </div>
       <div class="carousel-item">
-        <img src="images/about/image3.jpg" class="d-block w-100">
+        <img src="images/about/image3.jpg" class="d-block w-100 carousel-img">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -212,6 +208,14 @@
       interval: 5000, // 5s
       pause: false    // do not stop sliding on hover (they are stopped by default)
     })
+    
+    let carouselImages = $('.carousel-inner').find('img');
+    let numSlides = carouselImages.length;
+    
+    for (let i = 0; i < numSlides; i++) {
+      carouselImages[i].style.width = window.innerHeight + "px";
+    }
+
   </script>
 </body>
 

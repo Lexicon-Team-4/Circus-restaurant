@@ -1,25 +1,14 @@
 @import url("css-variables.css");
 
-/* body {
-  background-image: url('../images/events/swapnil-dwivedi-mK2fnT6frE0-unsplash.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin-left: 20%;
-  top: 50px;
-} */
-/* 
-html {
-  height: 100%
-} */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
+
 body{
   background-image: url("../images/events/background-event.jpg");
 }
-
 
 .banner {
   width: 100%;
@@ -50,8 +39,9 @@ body{
 .content h1:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.32); 
+  transform: scale(1.32);
 }
+
 .content p {
   margin: 20px auto;
   font-weight: 100;
@@ -71,7 +61,8 @@ body{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  padding: 200px 15.2vw;
+  padding: 100px 15.2vw;
+  align-items: flex-end;
 }
 
 .event-category {
@@ -79,7 +70,7 @@ body{
   font-size: 50px;
   text-transform: capitalize;
   font-family: 'Allura', 'Neonderthaw', cursive;
-  margin-top: 80px;
+  margin-top: 80px 0 0 0;
   color: rgba(48, 92, 117, 0.47);
   font-weight: 600;
 }
@@ -91,15 +82,13 @@ body{
   background-color: maroon;
   border-radius: 25px;
   display: block;
-  margin-bottom: 10px;
-  margin-top: 5px;
-
+  margin-top: 5px 0 10px 0;
 }
 
 .event-price {
   text-align: center;
   font-size: 18px;
-  margin-bottom: -80px;
+  margin-bottom: -180px;
 }
 
 .event-container::-webkit-scrollbar {
@@ -110,6 +99,7 @@ body{
   flex: 0 0 auto;
   width: 300px;
   height: 400px;
+  margin-top: 120px;
 }
 
 .event-image {
@@ -130,7 +120,7 @@ body{
 .event-thumb:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.28); 
+  transform: scale(1.28);
 }
 
 .booking a {
@@ -206,25 +196,25 @@ body{
 .timings {
   font-size: 20px;
   font-weight: bold;
-  
+
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1800px) {
   .event-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
   }
 }
 
-@media screen and (max-width: 950px) {
-  
+@media screen and (max-width: 1350px) {
+
   .event-container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 880px) {
   .event-container {
     grid-template-columns: 1fr;
     gap: 1.2rem;

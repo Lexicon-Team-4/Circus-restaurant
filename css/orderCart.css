@@ -154,7 +154,7 @@ html, body {
 .rabat-header-item1,
 .rabat-header-item2 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 75% 25%;
 }
 
 .price-without-rabat-left,

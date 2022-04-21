@@ -47,6 +47,11 @@ body{
   transition: all 0.3s;
 }
 
+.content h1:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.32); 
+}
 .content p {
   margin: 20px auto;
   font-weight: 100;
@@ -119,6 +124,13 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1.8s;
+}
+
+.event-thumb:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.28); 
 }
 
 .booking a {
@@ -192,8 +204,9 @@ body{
 }
 
 .timings {
-  font-size: 30px;
-  font-family: 'Allura', 'Neonderthaw', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  
 }
 
 @media screen and (max-width: 1024px) {
